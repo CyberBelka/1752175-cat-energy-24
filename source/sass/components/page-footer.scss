@@ -1,0 +1,34 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: $basic-grey;
+}
+
+.page-footer__contacts-bar {
+  width: 100%;
+
+  &--main {
+    background-color: $basic-white;
+  }
+}
+
+.page-footer__map {
+  width: 320px;
+}
+
+.page-footer__wrapper {
+  width: 100%;
+}
+
+.page-footer__container {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+  padding: 40px 0 22px;
+}
+
+.page-footer__logo {
+  align-self: center;
+}

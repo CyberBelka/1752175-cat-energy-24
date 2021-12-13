@@ -1,0 +1,29 @@
+.page-main-form {
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  padding: 0 20px;
+}
+
+.page-main-form__title {
+  margin: 0;
+  margin-bottom: 37px;
+  margin-left: 20px;
+
+  @include first-title;
+}
+
+
+.page-main-form__button {
+  width: 280px;
+  margin: 0 20px;
+  margin-bottom: 21px;
+}
+
+.page-main-form__legend {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: $basic-black;
+}

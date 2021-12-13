@@ -1,0 +1,18 @@
+.action {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  min-height: 290px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $basic-white;
+  background-color: $basic-green;
+  background-image: url("../../img/action.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.action__desc {
+  margin: 0;
+}

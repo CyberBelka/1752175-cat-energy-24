@@ -1,0 +1,17 @@
+.catalog {
+  padding-top: 27px;
+}
+
+.catalog__title {
+  margin: 0;
+  margin-bottom: 41px;
+  padding-left: 20px;
+
+  @include first-title;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

@@ -1,0 +1,21 @@
+.form-programs {
+  width: 320px;
+  margin: 0;
+  margin-bottom: 26px;
+  padding: 20px;
+  border: 1px solid $border;
+  box-sizing: border-box;
+
+  @include form-text;
+  color: $special-dark-grey-2;
+}
+
+.form-programs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form-programs__item:not(:last-child) {
+  margin-bottom: 12px;
+}

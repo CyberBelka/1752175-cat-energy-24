@@ -1,0 +1,25 @@
+.show-more {
+  width: 280px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.show-more__title {
+  margin: 0;
+  margin-bottom: 8px;
+  color: $strong;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.show-more__text {
+  margin: 0;
+  margin-bottom: 21px;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-dark-grey;
+}

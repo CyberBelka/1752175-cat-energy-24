@@ -1,0 +1,33 @@
+.cat-form {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  padding: 0;
+  color: $special-dark-grey;
+  border: none;
+
+  @include second-title;
+}
+
+.cat-form__item {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 13px;
+  width: 100%;
+}
+
+.cat-form__label {
+  margin-right: 13px;
+}
+
+.cat-form__input {
+  flex-grow: 1;
+  padding: 14px;
+  box-sizing: border-box;
+}
+
+
+.cat-form__input::placeholder {
+  @include form-text;
+}

@@ -1,0 +1,36 @@
+.form-contacts {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 25px 20px 0;
+  border: none;
+
+  @include second-title;
+}
+
+
+.form-contacts__item {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 13px;
+  width: 100%;
+}
+
+.form-contacts__label {
+  margin-right: 13px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+}
+
+.form-contacts__input {
+  flex-grow: 1;
+  padding: 14px;
+  box-sizing: border-box;
+}
+
+
+.form-contacts__input::placeholder {
+  @include form-text;
+}
