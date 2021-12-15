@@ -1,0 +1,22 @@
+.contacts {
+  display: flex;
+  width: 280px;
+  margin: 0 auto;
+  padding: 26px 0;
+}
+
+.contacts__invitation {
+  width: 139px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $strong;
+}
+
+.contacts__address {
+  font-style: normal;
+  line-height: 20px;
+  color: $special-dark-grey;
+}

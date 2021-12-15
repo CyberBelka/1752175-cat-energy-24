@@ -1,0 +1,28 @@
+.form-comment {
+  width: 280px;
+  margin: 0;
+  margin-bottom: 23px;
+  padding: 0 20px;
+  border: none;
+}
+
+.form-comment__title {
+  margin: 0;
+  margin-bottom: 38px;
+  padding: 0 20px;
+
+  @include second-title;
+}
+
+.form-comment__textarea {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 150px;
+  margin: 0;
+  padding: 9px 12px 9px 15px;
+  resize: none;
+}
+
+.form-comment__textarea::placeholder {
+  @include form-text;
+}

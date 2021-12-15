@@ -1,0 +1,26 @@
+.basic-button {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $basic-white;
+  text-decoration: none;
+  background-color: $basic-green;
+  border: none;
+
+  &--selection {
+    padding: 11px 0;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &--show-more {
+    background-color: $basic-grey;
+    color: $special-dark-grey;
+  }
+}

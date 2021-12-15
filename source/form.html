@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
@@ -28,11 +29,11 @@
       </nav>
     </div>
   </header>
-  <main class="page-main-form">
+  <main class="page-main-form page-main">
     <div class="page-main-form__wrapper">
       <h1 class="page-main-form__title">Подбор программы</h1>
-        <form class="page-main-form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="page-main-form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <form class="page-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="page-form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <fieldset class="cat-form">
             <legend class="visually-hidden">Данные кота</legend>
             <p class="cat-form__item">
@@ -102,41 +103,45 @@
               </li>
             </ul>
           </fieldset>
-          <button class="page-main-form__button" type="submit">Отправить заявку</button>
+          <button class="page-main-form__button basic-button" type="submit">Отправить заявку</button>
           <small class="page-main-form__legend">* — Обязательные поля</small>
         </form>
     </div>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__contacts-bar">
       <div class="page-footer__contacts contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <strong class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</strong>
         <address class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</address>
       </div>
+    </div>
+    <div class="page-footer__wrapper">
       <div class="page-footer__map"></div>
-      <div class="page-footer__logo">
-        <a class="page-footer__logo-link">
-          <img class="page-footer__logo-image" src="img/footer-logo.svg" width="128" height="24" alt="Логотип интернет-магазина «Cat Energy».">
-        </a>
-      </div>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <p class="copyright__text">HTML Academy</p>
-        </a>
+      <div class="page-footer__container">
+        <div class="page-footer__logo">
+          <a class="page-footer__logo-link">
+            <img class="page-footer__logo-image" src="img/footer-logo.svg" width="128" height="24" alt="Логотип интернет-магазина «Cat Energy».">
+          </a>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__text">HTML Academy</p>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
