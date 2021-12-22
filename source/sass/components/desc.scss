@@ -1,14 +1,36 @@
 .desc {
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 49px;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+    margin-bottom: 46px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 26px;
+    padding: 0;
+  }
 }
 
 .desc__title {
   margin: 0;
   margin-bottom: 40px;
+  font-family: $font-family-2;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
 
-  @include big-title;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .desc__list {
@@ -18,9 +40,42 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 58px;
+    row-gap: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
+}
+
+.desc__item {
+  @media (min-width: $tablet-width) {
+    width: 325px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 250px;
+  }
 }
 
 .desc__text {
+  width: 200px;
   margin: 0;
+  padding-left: 80px;
+  align-self: flex-end;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 57px;
+  }
 }

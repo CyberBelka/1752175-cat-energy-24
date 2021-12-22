@@ -1,16 +1,48 @@
 .main-nav {
-  display: flex;
+  font-family: $font-family-2;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
 
-  @include nav;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.main-nav__header-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-nav__toggle {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__list {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 478px;
+  }
 }
 
 .main-nav__link {
