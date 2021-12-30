@@ -1,12 +1,27 @@
 .cat-form {
   width: 280px;
-  margin: 0 auto;
+  margin: 0 20px;
   margin-bottom: 24px;
   padding: 0;
+  font-family: $font-family-2;
+  font-size: 16px;
+  text-transform: uppercase;
   color: $special-dark-grey;
   border: none;
 
-  @include second-title;
+  @media (min-width: $tablet-width) {
+    width: 630px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 569px;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .cat-form__item {
@@ -25,9 +40,18 @@
   flex-grow: 1;
   padding: 14px;
   box-sizing: border-box;
+  border: 1px solid $border;
 }
 
-
 .cat-form__input::placeholder {
-  @include form-text;
+  font-family: $font-family-2;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

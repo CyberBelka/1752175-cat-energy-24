@@ -1,6 +1,8 @@
 .show-more {
-  width: 280px;
-  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 20px;
   text-align: center;
 }
 
@@ -8,12 +10,18 @@
   margin: 0;
   margin-bottom: 8px;
   color: $strong;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-family-2;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 134px;
+    margin-bottom: 23px;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .show-more__text {
@@ -22,4 +30,15 @@
   font-size: 12px;
   line-height: 16px;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 167px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+.show-more__link {
+  width: 100%;
+  margin-top: auto;
 }

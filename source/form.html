@@ -34,49 +34,53 @@
     <div class="page-main-form__wrapper">
       <h1 class="page-main-form__title">Подбор программы</h1>
         <form class="page-form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="page-form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-          <fieldset class="cat-form">
-            <legend class="visually-hidden">Данные кота</legend>
-            <p class="cat-form__item">
-              <label class="cat-form__label" for="name">Имя:*</label>
-              <input class="cat-form__input" id="name" type="text" name="name" placeholder="Барсик">
-            </p>
-            <p class="cat-form__item">
-              <label class="cat-form__label" for="weight">Вес (кг):*</label>
-              <input class="cat-form__input" id="weight" type="text" name="weight" placeholder="7">
-            </p>
-            <p class="cat-form__item">
-              <label class="cat-form__label" for="age">Возраст (лет):</label>
-              <input class="cat-form__input" id="age" type="text" name="age" placeholder="7">
-            </p>
-          </fieldset>
-          <fieldset class="form-programs">
-            <legend class="visually-hidden">Выбор программы</legend>
-            <ul class="form-programs__list">
-              <li class="form-programs__item">
-                <input class="visually-hidden form-programs__input" type="radio" name="program" value="slim" id="slim" checked>
-                <label class="form-programs__control control-radio" for="slim">Похудение</label>
-              </li>
-              <li class="form-programs__item">
-                <input class="visually-hidden form-programs__input" type="radio" name="program" value="fat" id="fat">
-                <label class="form-programs__control control-radio" for="fat">Набор массы</label>
-              </li>
-              <li class="form-programs__item">
-                <input class="visually-hidden form-programs__input" type="radio" name="program" value="other" id="other">
-                <label class="form-programs__control control-radio" for="slim">Не знаю (Нужен ваш совет)</label>
-              </li>
-            </ul>
-          </fieldset>
+          <p class="page-form__text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
+          <div class="page-form__cat-programs-wrapper">
+            <fieldset class="cat-form">
+              <legend class="visually-hidden">Данные кота</legend>
+              <p class="cat-form__item">
+                <label class="cat-form__label" for="name">Имя:*</label>
+                <input class="cat-form__input" id="name" type="text" name="name" placeholder="Барсик">
+              </p>
+              <p class="cat-form__item">
+                <label class="cat-form__label" for="weight">Вес (кг):*</label>
+                <input class="cat-form__input" id="weight" type="text" name="weight" placeholder="7">
+              </p>
+              <p class="cat-form__item">
+                <label class="cat-form__label" for="age">Возраст (лет):</label>
+                <input class="cat-form__input" id="age" type="text" name="age" placeholder="7">
+              </p>
+            </fieldset>
+            <fieldset class="form-programs">
+              <legend class="visually-hidden">Выбор программы</legend>
+              <ul class="form-programs__list">
+                <li class="form-programs__item">
+                  <input class="visually-hidden form-programs__input" type="radio" name="program" value="slim" id="slim" checked>
+                  <label class="form-programs__control control-radio" for="slim">Похудение</label>
+                </li>
+                <li class="form-programs__item">
+                  <input class="visually-hidden form-programs__input" type="radio" name="program" value="fat" id="fat">
+                  <label class="form-programs__control control-radio" for="fat">Набор массы</label>
+                </li>
+                <li class="form-programs__item">
+                  <input class="visually-hidden form-programs__input" type="radio" name="program" value="other" id="other">
+                  <label class="form-programs__control control-radio" for="slim">Не знаю (Нужен ваш совет)</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <fieldset class="form-contacts">
             <legend class="form-contacts__title">Контактные данные (владельца кота)</legend>
-            <p class="form-contacts__item">
-              <label class="form-contacts__label" for="email">E-mail:*</label>
-              <input class="form-contacts__input" id="email" type="email" name="email" placeholder="kuklachev@gmail.com">
-            </p>
-            <p class="form-contacts__item">
-              <label class="form-contacts__label" for="phone">Телефон:*</label>
-              <input class="form-contacts__input" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
-            </p>
+            <div class="form-contacts__item-wrapper">
+              <p class="form-contacts__item">
+                <label class="form-contacts__label" for="email">E-mail:*</label>
+                <input class="form-contacts__input" id="email" type="email" name="email" placeholder="kuklachev@gmail.com">
+              </p>
+              <p class="form-contacts__item">
+                <label class="form-contacts__label" for="phone">Телефон:*</label>
+                <input class="form-contacts__input" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+              </p>
+            </div>
           </fieldset>
           <fieldset class="form-comment">
             <legend class="form-comment__title">Комментарий</legend>
@@ -104,8 +108,10 @@
               </li>
             </ul>
           </fieldset>
-          <button class="page-main-form__button basic-button" type="submit">Отправить заявку</button>
-          <small class="page-main-form__legend">* — Обязательные поля</small>
+          <div class="page-main-form__button-wrapper">
+            <button class="page-main-form__button basic-button" type="submit">Отправить заявку</button>
+            <small class="page-main-form__legend">* — Обязательные поля</small>
+          </div>
         </form>
     </div>
   </main>

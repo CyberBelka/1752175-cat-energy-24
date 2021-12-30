@@ -1,10 +1,44 @@
 .product-card {
-  padding: 11px 20px 14px;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  padding: 20px 20px 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 252px;
+    padding: 39px 36px;
+    background-color: $basic-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 165px;
+    padding: 40px;
+  }
 }
 
 .product-card__wrapper {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.product-card__link-image {
+  align-self: center;
+  width: 130px;
+  margin-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 42px;
+  }
 }
 
 .product-card__text {
@@ -12,26 +46,72 @@
   flex-direction: column;
   width: 142px;
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-bottom: 33px;
+    align-items: center;
+  }
 }
 
 .product-card__title {
   margin: 0;
   margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 21px;
+  }
 }
 
 .product-card__title-link {
   text-decoration: none;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-family-2;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   color: $special-dark-grey-2;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 21px;
+  }
 }
 
 .product-card__list {
   font-size: 12px;
   line-height: 16px;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.product-card__item {
+  display: flex;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 2px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+
+    &:not(:last-child) {
+      margin-bottom: 14px;
+    }
+  }
+}
+
+.product-card__order {
+  margin-top: auto;
 }

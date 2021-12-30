@@ -11,63 +11,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    width: 610px;
+    margin: 0;
     padding: 0;
-  }
-}
-
-.selection::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -20px;
-  z-index: -1;
-  width: 320px;
-  height: 302px;
-  background-image: url("../img/background-selection.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-
-  @media (min-width: $tablet-width) {
-    background-image: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: -70px;
-    left: 610px;
-    z-index: -1;
-    width: 720px;
-    height: 694px;
-    background-image: url("../img/background-selection.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: cover;
-  }
-}
-
-.selection::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -20px;
-  z-index: -1;
-  width: 320px;
-  height: 302px;
-  background-color: $basic-green;
-  opacity: 85%;
-
-  @media (min-width: $tablet-width) {
-    background-color: transparent;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: -70px;
-    left: 610px;
-    z-index: -1;
-    width: 720px;
-    height: 694px;
-    background-color: $basic-green;
-    opacity: 85%;
   }
 }
 

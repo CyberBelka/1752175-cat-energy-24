@@ -1,30 +1,60 @@
 .form-more {
   width: 280px;
   margin: 0;
-  margin-bottom: 32px;
   padding: 0 20px;
+  font-family: $font-family-2;
+  font-size: 16px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 
 .form-more__title {
   margin: 0;
   margin-bottom: 34px;
   padding: 0;
+  font-size: 24px;
+  line-height: 26px;
 
-  @include second-title;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .form-more__list {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   row-gap: 15px;
   margin: 0;
+  margin-bottom: 41px;
   padding: 0;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 37px;
   text-transform: uppercase;
   list-style: none;
-  color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.form-more__item {
+  @media (min-width: $tablet-width) {
+    width: 284px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 221px;
+  }
 }
