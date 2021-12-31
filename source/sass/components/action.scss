@@ -11,6 +11,17 @@
   background-image: url("../img/action.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    max-height: 289px;
+    margin: 0;
+  }
 }
 
 .action__desc {
