@@ -1,24 +1,19 @@
 .form-contacts {
-  width: 280px;
-  margin: 0 auto;
+  @include wrapper;
   margin-bottom: 24px;
-  padding: 0 20px;
-  font-family: $font-family-2;
+  font-family: $accent-font;
   font-size: 16px;
   line-height: 18px;
   border: none;
 
   @media (min-width: $tablet-width) {
-    width: 630px;
-    margin: 0 auto;
     margin-bottom: 65px;
+    padding: 0 40px;
     font-size: 20px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin: 0 auto;
     margin-bottom: 69px;
     padding: 0;
   }
@@ -40,26 +35,18 @@
 
 .form-contacts__item-wrapper {
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
   }
 }
 
 .form-contacts__item {
   display: flex;
   align-items: center;
-  width: 280px;
+  width: 100%;
   margin: 0;
   margin-bottom: 13px;
-
-  @media (min-width: $tablet-width) {
-    width: 630px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    width: 570px;
-  }
 }
 
 .form-contacts__label {
@@ -76,7 +63,7 @@
 }
 
 .form-contacts__input::placeholder {
-  font-family: $font-family-2;
+  font-family: $accent-font;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;

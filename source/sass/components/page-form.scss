@@ -12,10 +12,9 @@
 }
 
 .page-form__text {
-  margin: 0;
+  @include wrapper;
   margin-bottom: 39px;
-  padding: 0 20px;
-  font-family: $font-family-2;
+  font-family: $accent-font;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -32,16 +31,19 @@
 }
 
 .page-form__cat-programs-wrapper {
-  width: 320px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    width: 100%;
+    margin-bottom: 71px;
+    padding: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    width: 1220px;
-    margin-bottom: 69px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-bottom: 49px;
+    padding: 0;
   }
 }

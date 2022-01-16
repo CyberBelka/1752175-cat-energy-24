@@ -4,13 +4,23 @@
   align-items: center;
   padding: 25px 20px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    padding: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    padding: 40px;
+  }
 }
 
 .show-more__title {
   margin: 0;
   margin-bottom: 8px;
   color: $strong;
-  font-family: $font-family-2;
+  font-family: $accent-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;

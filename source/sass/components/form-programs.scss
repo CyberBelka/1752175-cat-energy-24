@@ -1,26 +1,20 @@
 .form-programs {
-  width: 320px;
-  margin: 0;
+  @include wrapper;
   margin-bottom: 26px;
   padding: 22px 20px 19px;
-  font-family: $font-family-2;
+  font-family: $accent-font;
   font-size: 16px;
   text-transform: uppercase;
-  border: 1px solid $border;
-  box-sizing: border-box;
+  border: none;
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
   color: $special-dark-grey-2;
 
   @media (min-width: $tablet-width) {
-    width: 630px;
-    margin: 0 auto;
-    margin-bottom: 71px;
+    padding: 25px 40px;
     font-size: 20px;
     line-height: 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 568px;
-    margin: 0;
+    border: 1px solid $border;
   }
 }
 

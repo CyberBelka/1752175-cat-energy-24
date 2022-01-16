@@ -1,37 +1,52 @@
 .selection {
   position: relative;
-  width: 280px;
+  width: 100%;
+  max-width: 1220px;
   min-height: 480px;
   margin: 0 auto;
-  padding-top: 27px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    width: 100%;
+    min-height: 850px;
+    margin-bottom: 0;
     padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 610px;
-    margin: 0;
+    display: flex;
+    width: 100%;
+    min-height: 526px;
+    margin: 0 auto;
+    margin-bottom: 82px;
     padding: 0;
   }
 }
 
 .selection__wrapper {
+  @include wrapper;
+  margin-top: -302px;
+
   @media (min-width: $tablet-width) {
-    padding-left: 87px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    padding: 0;
+    padding-left: 90px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 80px;
+    width: 610px;
+    margin: 0;
   }
 }
 
 .selection__title {
   z-index: 1;
   margin: 0;
+  margin-top: 27px;
   margin-bottom: 25px;
-  font-family: $font-family-2;
+  font-family: $accent-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -39,6 +54,7 @@
   color: $basic-white;
 
   @media (min-width: $tablet-width) {
+    margin-top: 40px;
     margin-bottom: 41px;
     font-size: 60px;
     line-height: 60px;
@@ -50,8 +66,8 @@
 .selection__text {
   z-index: 1;
   margin: 0;
-  margin-bottom: 302px;
-  font-family: $font-family-2;
+  margin-bottom: 29px;
+  font-family: $accent-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -68,11 +84,26 @@
   }
 }
 
-.selection__button {
-  margin-top: auto;
+.selection__image {
+  z-index: -1;
+  order: 4;
+  display: block;
+  margin-right: auto;
+  margin-bottom: 3px;
+  margin-left: auto;
 
   @media (min-width: $tablet-width) {
-    display: inline-block;
-    padding: 14px 26px;
+    position: absolute;
+    top: 243px;
+    left: 30px;
+    width: auto;
+    height: 609px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -25px;
+    left: 448px;
+    height: 499px;
   }
 }

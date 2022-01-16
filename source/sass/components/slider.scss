@@ -1,20 +1,59 @@
 .slider {
-  width: 280px;
-  margin: 0 auto;
+  @include wrapper;
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
-    margin: 0 auto;
+    margin-top: -632px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 591px;
+    margin-top: -641px;
   }
 }
 
+.slider__list {
+  @include list-reset;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.slider__item {
+  display: none;
+  width: 280px;
+  height: 232px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &--before {
+    background: url("../../img/before-mobile.png") no-repeat;
+  }
+
+  &--after {
+    background: url("../../img/after-mobile.png") no-repeat;
+  }
+
+  &--active {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 592px;
+    height: 511px;
+    background-size: 592px 511px;
+  }
+}
+
+.slider__buttons {
+  text-align: center;
+}
+
 .slider__button {
-  font-family: $font-family-2;
+  font-family: $accent-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;

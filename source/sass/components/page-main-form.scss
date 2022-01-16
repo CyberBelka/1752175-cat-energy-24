@@ -1,31 +1,28 @@
 .page-main-form {
-  width: 320px;
-  margin: 0 auto;
+  @include wrapper;
   padding: 27px 0 32px;
 
+
   @media (min-width: $tablet-width) {
-    width: 768px;
-    margin: 0 auto;
     padding: 40px 0 72px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
-    margin: 0 auto;
     padding: 20px 0 82px;
   }
 }
 
 .page-main-form__title {
-  margin: 0;
-  padding: 0 20px 37px;
-  font-family: $font-family-2;
+  @include wrapper;
+  padding-bottom: 37px;
+  font-family: $accent-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 70px 54px;
+    padding-bottom: 54px;
+    padding-left: 70px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -38,28 +35,28 @@
 }
 
 .page-main-form__button-wrapper {
+  padding: 0 20px;
+
   @media (min-width: $tablet-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 61px;
     align-items: center;
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 81px;
+    padding: 0;
   }
 }
 
 .page-main-form__button {
-  width: 280px;
-  margin: 0 20px;
+  width: 100%;
   margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
-    width: 192px;
     margin: 0;
-    margin-left: 38px;
-    margin-right: 61px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 568px;
-    margin: 0;
-    margin-right: 81px;
   }
 }
 
@@ -69,4 +66,8 @@
   line-height: 16px;
   text-align: center;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+  }
 }

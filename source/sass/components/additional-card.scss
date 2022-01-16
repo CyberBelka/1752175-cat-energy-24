@@ -1,18 +1,15 @@
 .additional-card {
-  width: 280px;
   padding: 13px 0 19px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 632px;
     padding: 26px 38px 28px;
   }
 
   @media (min-width: $desktop-width) {
     align-items: center;
-    width: 895px;
     padding: 15px 0 17px;
   }
 }
@@ -20,7 +17,7 @@
 .additional-card__title {
   margin: 0;
   margin-bottom: 13px;
-  font-family: $font-family-2;
+  font-family: $accent-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;

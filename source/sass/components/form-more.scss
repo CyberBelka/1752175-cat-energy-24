@@ -1,19 +1,14 @@
 .form-more {
-  width: 280px;
-  margin: 0;
-  padding: 0 20px;
-  font-family: $font-family-2;
+  @include wrapper;
+  font-family: $accent-font;
   font-size: 16px;
   border: none;
 
   @media (min-width: $tablet-width) {
-    width: 630px;
-    margin: 0 auto;
+    padding: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin: 0 auto;
     padding: 0;
   }
 }
@@ -33,28 +28,28 @@
 }
 
 .form-more__list {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  row-gap: 15px;
-  margin: 0;
-  margin-bottom: 41px;
-  padding: 0;
   text-transform: uppercase;
-  list-style: none;
+
+  @include list-reset;
+  margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-.form-more__item {
-  @media (min-width: $tablet-width) {
-    width: 284px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 32px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 221px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+
+.form-more__item:not(:last-child) {
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
   }
 }
