@@ -1,14 +1,20 @@
 .form-contacts {
-  @include wrapper;
+  position: relative;
+  margin: 0 auto;
   margin-bottom: 24px;
+  padding: 0;
   font-family: $accent-font;
   font-size: 16px;
   line-height: 18px;
   border: none;
 
+  &::after {
+    @include title-line;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
-    padding: 0 40px;
+    padding: 0;
     font-size: 20px;
     line-height: 30px;
   }
@@ -19,17 +25,44 @@
   }
 }
 
+.form-contacts__title-wrapper {
+  @include wrapper;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 70px;
+  }
+}
+
 .form-contacts__title {
-  width: 187px;
+  display: inline-block;
+  width: 200px;
   margin-bottom: 35px;
+  padding-right: 14px;
   font-size: 24px;
   line-height: 26px;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
     width: auto;
     margin-bottom: 76px;
+    padding-right: 42px;
+    padding-left: 40px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 40px;
+  }
+}
+
+.form-contacts__container {
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -56,6 +89,7 @@
 }
 
 .form-contacts__input {
+  position: relative;
   flex-grow: 1;
   padding: 14px;
   box-sizing: border-box;
@@ -63,14 +97,5 @@
 }
 
 .form-contacts__input::placeholder {
-  font-family: $accent-font;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: $special-dark-grey;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
-  }
+  @include placeholder;
 }

@@ -1,5 +1,6 @@
 .page-main-form {
-  @include wrapper;
+  width: 100%;
+  margin: 0 auto;
   padding: 27px 0 32px;
 
 
@@ -35,6 +36,8 @@
 }
 
 .page-main-form__button-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
@@ -42,12 +45,12 @@
     grid-template-columns: 1fr 1fr;
     gap: 61px;
     align-items: center;
-    padding: 0 40px;
+    padding: 0 70px;
   }
 
   @media (min-width: $desktop-width) {
     gap: 81px;
-    padding: 0;
+    padding: 0 110px;
   }
 }
 

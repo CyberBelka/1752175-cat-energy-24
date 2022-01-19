@@ -1,14 +1,6 @@
 .page-form {
   margin: 0;
   padding: 0;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 110px;
-  }
 }
 
 .page-form__text {
@@ -20,13 +12,26 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding: 0 40px;
+    padding: 0 70px;
     font-size: 20px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 0;
+    padding: 0 110px;
+  }
+}
+
+.page-form__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
   }
 }
 
@@ -40,10 +45,26 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    margin-bottom: 49px;
-    padding: 0;
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      margin-bottom: 49px;
+      padding: 0;
+    }
+  }
+}
+
+.page-form__container {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    padding: 0 110px;
   }
 }

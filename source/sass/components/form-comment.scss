@@ -1,11 +1,17 @@
 .form-comment {
-  @include wrapper;
+  position: relative;
+  margin: 0 auto;
   margin-bottom: 23px;
+  padding: 0;
   border: none;
+
+  &::after {
+    @include title-line;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
-    padding: 0 40px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,18 +20,40 @@
   }
 }
 
+.form-comment__title-wrapper {
+  @include wrapper;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 70px;
+  }
+}
+
 .form-comment__title {
+  display: inline-block;
   margin: 0;
   margin-bottom: 38px;
   padding: 0;
+  padding-right: 22px;
   font-family: $accent-font;
   font-size: 24px;
   line-height: 26px;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 76px;
+    padding-left: 40px;
     font-size: 36px;
     line-height: 36px;
+  }
+}
+
+.form-comment__container {
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 

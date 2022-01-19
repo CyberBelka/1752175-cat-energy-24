@@ -2,8 +2,13 @@
   @include wrapper;
   padding: 11px 0 17px;
 
+  &--inner-page {
+    border-bottom: 1px solid $header-border;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 24px 30px;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {

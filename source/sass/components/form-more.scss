@@ -1,27 +1,37 @@
 .form-more {
-  @include wrapper;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
   font-family: $accent-font;
   font-size: 16px;
   border: none;
 
-  @media (min-width: $tablet-width) {
-    padding: 0 40px;
+  &::after {
+    @include title-line;
   }
+}
+
+.form-more__title-wrapper {
+  @include wrapper;
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    padding: 0 70px;
   }
 }
 
 .form-more__title {
+  display: inline-block;
   margin: 0;
   margin-bottom: 34px;
   padding: 0;
+  padding-right: 23px;
   font-size: 24px;
   line-height: 26px;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 57px;
+    padding-left: 40px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -38,18 +48,80 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 32px;
+    padding: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
+    padding: 0;
   }
 }
 
-.form-more__item:not(:last-child) {
-  margin-bottom: 12px;
+.form-more__item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.form-more__control {
+  padding-left: 44px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    padding-left: 60px;
   }
+}
+
+.form-more__input + label::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  border: 1px solid $special-grey;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.form-more__input:hover + label::before {
+  border-color: $button-hover;
+}
+
+.form-more__input:checked + label::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  border: 1px solid $special-grey;
+  background-color: transparent;
+  background-image: url("../../img/checkbox-active.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 14px;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.form-more__input:checked:hover + label::before {
+  border-color: $button-hover;
+}
+
+.form-more__input:disabled + label {
+  opacity: 0.3;
 }

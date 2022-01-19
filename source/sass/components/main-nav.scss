@@ -175,6 +175,10 @@
     }
   }
 
+  &--inner-active {
+    text-decoration-color: $basic-green;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0;
   }
