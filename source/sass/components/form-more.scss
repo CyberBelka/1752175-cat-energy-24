@@ -5,14 +5,15 @@
   font-family: $accent-font;
   font-size: 16px;
   border: none;
-
-  &::after {
-    @include title-line;
-  }
+  overflow-x: hidden;
 }
 
 .form-more__title-wrapper {
   @include wrapper;
+
+  &::after {
+    @include title-line;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 0 70px;

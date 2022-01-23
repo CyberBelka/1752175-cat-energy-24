@@ -5,19 +5,16 @@
   background-color: $basic-grey;
 }
 
-.page-footer__contacts-bar {
-  width: 100%;
+.page-footer__contacts-wrapper {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
 
   &--main {
     background-color: $basic-white;
-  }
-}
-
-.page-footer__contacts-wrapper {
-  @media (min-width: $desktop-width) {
-    position: relative;
-    width: 1220px;
-    margin: 0 auto;
   }
 }
 
@@ -26,7 +23,6 @@
     position: absolute;
     top: 95px;
     left: 0;
-    background-color: $basic-white;
   }
 }
 

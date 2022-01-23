@@ -4,10 +4,7 @@
   margin-bottom: 23px;
   padding: 0;
   border: none;
-
-  &::after {
-    @include title-line;
-  }
+  overflow-x: hidden;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
@@ -22,6 +19,10 @@
 
 .form-comment__title-wrapper {
   @include wrapper;
+
+  &::after {
+    @include title-line;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 0 70px;

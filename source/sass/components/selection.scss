@@ -1,50 +1,75 @@
 .selection {
-  position: relative;
   width: 100%;
-  max-width: 1220px;
   min-height: 480px;
-  margin: 0 auto;
   margin-bottom: 20px;
+  background-image: url("../img/bg-selection-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 0 0;
 
   @media (min-width: $tablet-width) {
     width: 100%;
     min-height: 850px;
     margin-bottom: 0;
     padding: 0 30px;
+    background-image: none;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     width: 100%;
-    min-height: 526px;
+    min-height: 696px;
     margin: 0 auto;
+    margin-top: -242px;
     margin-bottom: 82px;
     padding: 0;
+    background-image: url("../img/bg-selection-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right center;
   }
 }
 
 .selection__wrapper {
   @include wrapper;
-  margin-top: -302px;
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  max-width: 1220px;
+  min-height: 480px;
+  margin: 0 auto;
+  padding-top: 27px;
+  background-image: url("../img/index-can-mobile.png");
+  background-repeat: no-repeat;
+  background-size: auto 270px;
+  background-position: center 167px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    min-height: 850px;
     margin-top: 0;
     padding: 0;
     padding-left: 90px;
+    background-image: url("../img/index-can-tablet.png");
+    background-repeat: no-repeat;
+    background-size: auto 609px;
+    background-position: center 240px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 610px;
-    margin: 0;
+    min-height: 696px;
+    padding-top: 224px;
+    background-image: url("../img/index-can-desktop.png");
+    background-repeat: no-repeat;
+    background-size: auto 499px;
+    background-position: 448px 205px;
   }
 }
 
 .selection__title {
   z-index: 1;
   margin: 0;
-  margin-top: 27px;
   margin-bottom: 25px;
   font-family: $accent-font;
   font-weight: 400;
@@ -60,6 +85,10 @@
     line-height: 60px;
     text-align: left;
     color: $basic-black;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 59px;
   }
 }
 
@@ -81,29 +110,5 @@
     line-height: 20px;
     text-align: left;
     color: $basic-black;
-  }
-}
-
-.selection__image {
-  z-index: -1;
-  order: 4;
-  display: block;
-  margin-right: auto;
-  margin-bottom: 3px;
-  margin-left: auto;
-
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 243px;
-    left: 30px;
-    width: auto;
-    height: 609px;
-    margin-bottom: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: -25px;
-    left: 448px;
-    height: 499px;
   }
 }

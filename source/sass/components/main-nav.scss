@@ -165,10 +165,12 @@
   }
 
   &--active {
-    text-decoration: underline;
-    text-decoration-color: $basic-green;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 9px;
+    @media (min-width: $tablet-width) {
+      text-decoration: underline;
+      text-decoration-color: $basic-green;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 9px;
+    }
 
     @media (min-width: $desktop-width) {
       text-decoration-color: $basic-white;

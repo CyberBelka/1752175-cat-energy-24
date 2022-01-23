@@ -59,22 +59,6 @@
     width: 250px;
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    background-color: $basic-green;
-
-    @media (min-width: $tablet-width) {
-      top: 40px;
-      width: 80px;
-      height: 80px;
-    }
-  }
-
   &::after {
     @media (min-width: $tablet-width) {
       counter-increment: section;
@@ -93,6 +77,9 @@
 
 .desc__text {
   position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 60px;
   margin: 0;
   padding-left: 80px;
   color: $special-dark-grey;
@@ -109,21 +96,21 @@
 
   &--leaf::before {
     @include desc-icon;
-    background-image: url("../../img/icon-leaf.png");
+    background-image: url("../../img/icon-leaf.svg");
   }
 
   &--tub::before {
     @include desc-icon;
-    background-image: url("../../img/icon-tub.png");
+    background-image: url("../../img/icon-tub.svg");
   }
 
   &--eat::before {
     @include desc-icon;
-    background-image: url("../../img/icon-eat.png");
+    background-image: url("../../img/icon-eat.svg");
   }
 
   &--alarm::before {
     @include desc-icon;
-    background-image: url("../../img/icon-alarm.png");
+    background-image: url("../../img/icon-alarm.svg");
   }
 }

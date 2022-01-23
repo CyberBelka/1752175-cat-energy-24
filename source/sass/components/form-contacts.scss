@@ -7,10 +7,7 @@
   font-size: 16px;
   line-height: 18px;
   border: none;
-
-  &::after {
-    @include title-line;
-  }
+  overflow-x: hidden;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
@@ -28,6 +25,11 @@
 .form-contacts__title-wrapper {
   @include wrapper;
 
+
+  &::after {
+    @include title-line;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 0 70px;
   }
@@ -35,7 +37,6 @@
 
 .form-contacts__title {
   display: inline-block;
-  width: 200px;
   margin-bottom: 35px;
   padding-right: 14px;
   font-size: 24px;
@@ -53,6 +54,12 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 40px;
+  }
+}
+
+.form-contacts__title br {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 

@@ -21,7 +21,7 @@
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--active main-nav__link--page-main">Главная</a>
+              <a class="main-nav__link main-nav__link--active  main-nav__link--page-main">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--page-main" href="catalog.html">Каталог продукции</a>
@@ -35,15 +35,9 @@
     <main class="page-main">
       <h1 class="visually-hidden">Интернет-магазин фитнес еды для котиков «Cat Energy»</h1>
       <section class="selection">
-        <div class="promo"></div>
         <div class="selection__wrapper">
           <h2 class="selection__title">Функциональное<br> питание для котов</h2>
           <p class="selection__text">Занялся собой? Займись котом!</p>
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png">
-            <source media="(min-width: 768px)" srcset="img/index-can-tablet.png">
-            <img class="selection__image" src="img/index-can-mobile.png" width="280" height="270" alt="Упаковка корма для котов «Cat Energy».">
-          </picture>
           <a class="selection__button basic-button basic-button--selection" href="form.html">Подобрать программу</a>
         </div>
       </section>
@@ -51,18 +45,16 @@
         <div class="programs__wrapper">
           <h2 class="visually-hidden">Программы питания</h2>
           <ul class="programs__list">
-            <li class="programs__item programs__item">
-              <img class="programs__image--slim" src="img/cat-back-slim.svg" width="50" height="53" alt="Похудевший кот.">
+            <li class="programs__item">
               <div class="programs__item-wrapper">
-                <h3 class="programs__title programs__title">Похудение</h3>
+                <h3 class="programs__title programs__title--slim">Похудение</h3>
                 <p class="programs__desc">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
                 <a class="programs__link" href="catalog.html">Каталог slim</a>
               </div>
             </li>
-            <li class="programs__item programs__item">
-              <img class="programs__image--fat" src="img/cat-back-fat.svg" width="67" height="50" alt="Кот, набравший массу.">
+            <li class="programs__item">
               <div class="programs__item-wrapper">
-                <h3 class="programs__title programs__title">Набор массы</h3>
+                <h3 class="programs__title programs__title--fat">Набор массы</h3>
                 <p class="programs__desc">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
                 <a class="programs__link" href="catalog.html">Каталог pro</a>
               </div>
@@ -123,9 +115,12 @@
                     <li class="slider__item slider__item--active slider__item--before"></li>
                     <li class="slider__item slider__item--after"></li>
                   </ol>
-                  <div class="slider__buttons">
-                    <button class="slider__button slider__button--before" type="button">Было</button>
-                    <button class="slider__button slider__button--after" type="button">Стало</button>
+                  <div class="slider__control">
+                    <button type="button" class="slider__button slider__button--before" type="button">Было</button>
+                    <div class="slider__scale">
+                      <span class="slider__line"></span>
+                    </div>
+                    <button type="button" class="slider__button slider__button--after" type="button">Стало</button>
                   </div>
                 </div>
               </div>
@@ -135,20 +130,16 @@
       </section>
     </main>
     <footer class="page-footer">
+      <div class="page-footer__contacts-wrapper">
+        <div class="page-footer__contacts contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <strong class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</strong>
+          <address class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</address>
+        </div>
+      </div>
       <div class="page-footer__wrapper">
-        <div class="page-footer__map-contacts">
-          <div class="page-footer__contacts-bar page-footer__contacts-bar--main">
-            <div class="page-footer__contacts-wrapper">
-              <div class="page-footer__contacts page-footer__contacts--main contacts">
-                <h2 class="visually-hidden">Контакты</h2>
-                <strong class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</strong>
-                <address class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</address>
-              </div>
-            </div>
-          </div>
-          <div class="page-footer__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1642181841742!5m2!1sru!2sru" width="100%" height="362" allowfullscreen="" title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8, Санкт-Петербург"></iframe>
-          </div>
+        <div class="page-footer__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1642181841742!5m2!1sru!2sru" width="100%" height="362" allowfullscreen="" title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8, Санкт-Петербург"></iframe>
         </div>
         <div class="page-footer__container">
           <div class="page-footer__logo">

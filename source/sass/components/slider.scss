@@ -48,8 +48,10 @@
   }
 }
 
-.slider__buttons {
-  text-align: center;
+.slider__control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slider__button {
@@ -59,4 +61,75 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: transparentize($color: $basic-black, $amount: 0.76);
+    text-underline-offset: 6px;
+  }
+}
+
+.slider__scale {
+  position: relative;
+  width: 86px;
+  height: 14px;
+  background-color: $basic-white;
+  border: 1px solid $special-grey;
+  border-radius: 6px;
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 34px;
+      height: 34px;
+      background-color: $basic-white;
+      border-radius: 50%;
+      box-shadow: 0 1px 3px transparentize($color: #000000, $amount: 0.84);
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 8px;
+      height: 8px;
+      background-color: $basic-green;
+      border-radius: 50%;
+      box-shadow: 0 1px 3px transparentize($color: #000000, $amount: 0.84);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 426px;
+    height: 6px;
+    background-color: $special-grey;
+    border: none;
+    border-radius: 6px;
+  }
+}
+
+.slider__line {
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 36px;
+  height: 6px;
+  background-color: $basic-green;
+  border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
