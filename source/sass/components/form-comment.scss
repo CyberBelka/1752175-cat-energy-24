@@ -70,5 +70,29 @@
   text-transform: uppercase;
   color: $special-dark-grey;
   resize: none;
-  border: 1px solid $border;
+  outline: 1px solid $border;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 19px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &::placeholder {
+    @include placeholder;
+  }
+
+  &:hover {
+    outline-color: $special-grey;
+  }
+
+  &:focus {
+    outline: 2px solid $special-dark-grey;
+    border: none;
+  }
+
+  &--error {
+    outline: 2px solid $status-error;
+  }
 }

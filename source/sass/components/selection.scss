@@ -23,7 +23,7 @@
     margin-top: -242px;
     margin-bottom: 82px;
     padding: 0;
-    background-image: url("../img/bg-selection-desktop.jpg");
+    background: url("../img/bg-selection-desktop.jpg"), linear-gradient(90deg, $green-gradient 50%, $green-gradient 50%);
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: right center;

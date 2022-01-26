@@ -67,6 +67,9 @@
 }
 
 .main-nav__logo {
+  display: flex;
+  justify-content: space-between;
+  width: 191px;
   margin-left: 20px;
 
   &:hover {
@@ -78,12 +81,27 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 174px;
+    display: block;
     margin-left: 0;
+  }
+}
+
+.main-nav__logo-image {
+  @media (min-width: $tablet-width) {
+    width: 174px;
   }
 
   @media (min-width: $tablet-width) {
     width: 202px;
+  }
+}
+
+.main-nav__logo-image-title {
+  height: 18px;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 

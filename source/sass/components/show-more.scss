@@ -29,11 +29,13 @@
 
   @media (min-width: $tablet-width) {
     width: 324px;
+    margin-top: 73px;
     padding: 38px;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    margin-top: 80px;
     padding: 40px;
   }
 }

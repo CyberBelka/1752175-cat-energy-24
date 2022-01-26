@@ -82,11 +82,16 @@
 }
 
 .form-contacts__item {
+  position: relative;
   display: flex;
   align-items: center;
   width: 100%;
   margin: 0;
   margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .form-contacts__label {
@@ -98,11 +103,65 @@
 .form-contacts__input {
   position: relative;
   flex-grow: 1;
-  padding: 14px;
-  box-sizing: border-box;
-  border: 1px solid $border;
+  padding: 13px 15px 14px;
+  font-family: $accent-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+  outline: 1px solid $border;
+  border: none;
+  transition: all 0.3 ease;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 21px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &::placeholder {
+    @include placeholder;
+  }
+
+  &--error {
+    outline: 2px solid $status-error;
+  }
+
+  &--email::placeholder {
+    text-decoration: underline;
+
+    @media (min-width: $tablet-width) {
+      text-decoration: none;
+    }
+  }
 }
 
-.form-contacts__input::placeholder {
-  @include placeholder;
+.form-contacts__input--error + .form-contacts__input-icon {
+  color: $status-error;
+}
+
+.form-contacts__input-icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  transition: all 0.3 ease;
+}
+
+.form-contacts__input:hover {
+  outline: 1px solid $special-grey;
+  border: none;
+
+  + .form-contacts__input-icon {
+    color: $basic-black;
+  }
+}
+
+.form-contacts__input:focus {
+  outline: 2px solid $special-dark-grey;
+  border: none;
+
+  + .form-contacts__input-icon {
+    color: $basic-green;
+  }
 }
