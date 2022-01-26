@@ -1,5 +1,8 @@
 .action {
-  width: 280px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 35px;
   min-height: 290px;
@@ -13,17 +16,58 @@
   background-size: cover;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    min-height: 200px;
     margin-bottom: 76px;
+    background-image: url("../img/bg-action-tablet.jpg");
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
     max-height: 289px;
     margin: 0;
+    background-image: url("../img/bg-action-desktop.jpg");
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 59px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    @media (min-width: $tablet-width) {
+      top: 50%;
+      transform: translateY(-50%);
+      left: 77px;
+      background-size: 80px 83px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 56px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
 
 .action__desc {
   margin: 0;
+  padding-top: 187px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 71px;
+    padding-left: 422px;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 185px;
+    padding-left: 0;
+    text-align: center;
+  }
 }

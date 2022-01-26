@@ -1,4 +1,44 @@
 .social__list {
   display: flex;
-  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
+
+  @include list-reset;
+  margin: 0 auto;
+}
+
+.social__link {
+  display: block;
+  color: $special-grey-1;
+
+  &:hover {
+    color: $basic-green;
+  }
+
+  &:active {
+    color: $basic-green;
+    opacity: 0.3;
+  }
+}
+
+.social__link--vkontakte svg {
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.social__link--instagram svg {
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.social__link--facebook svg {
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 33px;
+  }
 }

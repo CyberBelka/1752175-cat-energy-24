@@ -1,36 +1,60 @@
 .form-comment {
-  width: 280px;
+  position: relative;
   margin: 0 auto;
   margin-bottom: 23px;
-  padding: 0 20px;
+  padding: 0;
   border: none;
+  overflow-x: hidden;
 
   @media (min-width: $tablet-width) {
-    width: 630px;
-    margin: 0 auto;
     margin-bottom: 65px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin: 0 auto;
     margin-bottom: 67px;
     padding: 0;
   }
 }
 
+.form-comment__title-wrapper {
+  @include wrapper;
+
+  &::after {
+    @include title-line;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 70px;
+  }
+}
+
 .form-comment__title {
+  display: inline-block;
   margin: 0;
   margin-bottom: 38px;
   padding: 0;
-  font-family: $font-family-2;
+  padding-right: 22px;
+  font-family: $accent-font;
   font-size: 24px;
   line-height: 26px;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 76px;
+    padding-left: 40px;
     font-size: 36px;
     line-height: 36px;
+  }
+}
+
+.form-comment__container {
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -40,11 +64,35 @@
   min-height: 150px;
   margin: 0;
   padding: 9px 12px 9px 15px;
-  font-family: $font-family-2;
+  font-family: $accent-font;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $special-dark-grey;
   resize: none;
-  border: 1px solid $border;
+  outline: 1px solid $border;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 19px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &::placeholder {
+    @include placeholder;
+  }
+
+  &:hover {
+    outline-color: $special-grey;
+  }
+
+  &:focus {
+    outline: 2px solid $special-dark-grey;
+    border: none;
+  }
+
+  &--error {
+    outline: 2px solid $status-error;
+  }
 }

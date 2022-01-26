@@ -1,50 +1,62 @@
 .product-card {
-  display: flex;
-  flex-direction: column;
-  width: 280px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
   padding: 20px 20px 25px;
 
   @media (min-width: $tablet-width) {
-    width: 252px;
-    padding: 39px 36px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: 324px;
+    padding: 0 38px 39px;
+    padding-top: 0;
     background-color: $basic-grey;
+    background-image: linear-gradient($basic-white 73px, $basic-grey 73px);
   }
 
   @media (min-width: $desktop-width) {
-    width: 165px;
-    padding: 40px;
-  }
-}
-
-.product-card__wrapper {
-  display: flex;
-  justify-content: space-between;
-
-  @media (min-width: $tablet-width) {
-    flex-direction: column;
-    align-items: center;
+    width: 245px;
+    padding: 0 38px 40px 39px;
+    background-image: linear-gradient($basic-white 80px, $basic-grey 80px);
   }
 }
 
 .product-card__link-image {
-  align-self: center;
-  width: 130px;
-  margin-right: 10px;
+  grid-column: 1 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
+    align-items: flex-end;
+    width: 100%;
+    height: 200px;
     margin: 0;
     margin-bottom: 34px;
+    text-align: center;
   }
 
   @media (min-width: $desktop-width) {
+    height: 196px;
     margin-bottom: 42px;
   }
 }
 
+.product-card__image {
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
+}
+
 .product-card__text {
+  grid-column: 2 / 3;
   display: flex;
   flex-direction: column;
-  width: 142px;
+  width: 100%;
   margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
@@ -55,21 +67,23 @@
 }
 
 .product-card__title {
+  width: 76px;
   margin: 0;
   margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
+    width: 159px;
     margin-bottom: 21px;
+    text-align: center;
   }
 }
 
 .product-card__title-link {
   text-decoration: none;
-  font-family: $font-family-2;
+  font-family: $accent-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
   text-transform: uppercase;
   color: $special-dark-grey-2;
 
@@ -101,10 +115,16 @@
 
   &:not(:last-child) {
     margin-bottom: 2px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 7px;
+    }
   }
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 9px;
     font-size: 16px;
+    border-bottom: 1px solid $special-grey;
 
     &:not(:last-child) {
       margin-bottom: 14px;
@@ -113,5 +133,7 @@
 }
 
 .product-card__order {
-  margin-top: auto;
+  grid-column: 1 / -1;
+  width: 100%;
+  margin: auto;
 }

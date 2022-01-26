@@ -1,16 +1,51 @@
 .show-more {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 25px 20px;
   text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/icon-plus.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    @media (min-width: $tablet-width) {
+      top: 52px;
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/icon-plus-tablet.svg");
+      background-size: 60px 60px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    margin-top: 73px;
+    padding: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin-top: 80px;
+    padding: 40px;
+  }
 }
 
 .show-more__title {
   margin: 0;
   margin-bottom: 8px;
+  padding-top: 53px;
   color: $strong;
-  font-family: $font-family-2;
+  font-family: $accent-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -19,6 +54,7 @@
   @media (min-width: $tablet-width) {
     width: 134px;
     margin-bottom: 23px;
+    padding-top: 123px;
     font-size: 20px;
     line-height: 22px;
   }

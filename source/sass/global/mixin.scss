@@ -1,0 +1,67 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}
+
+@mixin desc-icon {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    top: 40px;
+    width: 80px;
+    height: 80px;
+    background-size: 80px 80px;
+  }
+}
+
+@mixin title-line {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 15px;
+  left: 40px;
+  width: 100%;
+  height: 2px;
+  background-color: $basic-green;
+
+  @media (min-width: $tablet-width) {
+    top: 20px;
+    left: 0;
+  }
+}
+
+@mixin placeholder {
+  font-family: $accent-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

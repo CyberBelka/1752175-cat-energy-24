@@ -1,26 +1,25 @@
 .form-programs {
-  width: 320px;
-  margin: 0;
+  @include wrapper;
   margin-bottom: 26px;
   padding: 22px 20px 19px;
-  font-family: $font-family-2;
+  font-family: $accent-font;
   font-size: 16px;
   text-transform: uppercase;
-  border: 1px solid $border;
-  box-sizing: border-box;
+  border: none;
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
   color: $special-dark-grey-2;
 
   @media (min-width: $tablet-width) {
-    width: 630px;
-    margin: 0 auto;
-    margin-bottom: 71px;
+    padding: 30px 28px;
     font-size: 20px;
     line-height: 30px;
+    border: 1px solid $border;
   }
 
   @media (min-width: $desktop-width) {
-    width: 568px;
-    margin: 0;
+    margin-bottom: 0;
+    padding: 30px 28px;
   }
 }
 
@@ -30,6 +29,61 @@
   list-style: none;
 }
 
-.form-programs__item:not(:last-child) {
-  margin-bottom: 12px;
+.form-programs__item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+.form-programs__control {
+  padding-left: 45px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
+}
+
+.form-programs__input + label::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid $special-grey;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.form-programs__input:hover + label::before {
+  border-color: $button-hover;
+}
+
+.form-programs__input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 8px;
+  width: 13.5px;
+  height: 13.5px;
+  background-color: $basic-green;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 4px;
+    left: 11px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.form-programs__input:disabled + label {
+  opacity: 0.3;
 }

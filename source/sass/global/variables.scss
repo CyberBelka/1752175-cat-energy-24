@@ -1,4 +1,4 @@
-$font-family-2: "Oswald", "Arial", sans-serif;
+$accent-font: "Oswald", "Arial", sans-serif;
 $basic-green: #68b738;
 $basic-green-2: #5eaa2f;
 $basic-grey: #f2f2f2;
@@ -14,6 +14,10 @@ $light-grey: #eaeaea;
 $strong: #111111;
 $border: #e7e7e7;
 $header-border: #d9d9d9;
+$header-border-2: #e6e6e6;
+$button-hover: #bababa;
+$icon-plus: #d3d3d3;
+$green-gradient: transparentize($basic-green, 0.15);
 $tablet-width: 768px;
 $desktop-width: 1440px;
 $mobile-width-only: 767px;
