@@ -3,18 +3,18 @@
 
   position: relative;
   z-index: 2;
-  padding: 11px 0 17px;
+  padding: 11px 0 15px;
 
   &--inner-page {
     border-bottom: 1px solid $header-border;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 24px 30px;
+    padding: 26px 30px;
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 53px 110px;
+    padding: 52px 110px;
   }
 }

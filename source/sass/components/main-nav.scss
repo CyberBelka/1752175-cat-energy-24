@@ -82,23 +82,30 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    width: 174px;
     margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
   }
 }
 
 .main-nav__logo-image {
   @media (min-width: $tablet-width) {
     width: 174px;
+    height: 52px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 202px;
+    height: 59px;
   }
 }
 
 .main-nav__logo-image-title {
-  height: 18px;
   align-self: center;
+  height: 18px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -125,7 +132,7 @@
 
 .main-nav__list {
   position: absolute;
-  top: 55px;
+  top: 54px;
   right: 0;
   z-index: 1;
   background-color: $basic-white;
@@ -136,15 +143,17 @@
   @media (min-width: $tablet-width) {
     position: static;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    row-gap: 20px;
     width: 440px;
     padding: 0;
     background-color: transparent;
   }
 
   @media (min-width: $desktop-width) {
-    width: 478px;
+    width: 480px;
   }
 }
 
@@ -169,7 +178,7 @@
 .main-nav__link {
   position: relative;
   display: block;
-  padding: 22px 0 24px;
+  padding: 23px 0 22px;
   text-align: center;
   color: $basic-black;
   text-decoration: none;
@@ -187,7 +196,7 @@
       text-decoration: underline;
       text-decoration-color: $basic-green;
       text-decoration-thickness: 2px;
-      text-underline-offset: 9px;
+      text-underline-offset: 11px;
     }
 
     @media (min-width: $desktop-width) {

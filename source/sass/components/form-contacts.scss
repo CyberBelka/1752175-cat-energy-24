@@ -1,7 +1,7 @@
 .form-contacts {
   position: relative;
   margin: 0 auto;
-  margin-bottom: 24px;
+  margin-bottom: 8px;
   padding: 0;
   font-family: $accent-font;
   font-size: 16px;
@@ -10,14 +10,14 @@
   overflow-x: hidden;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 45px;
     padding: 0;
     font-size: 20px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 69px;
+    margin-bottom: 47px;
     padding: 0;
   }
 }
@@ -38,7 +38,7 @@
 .form-contacts__title {
   display: inline-block;
   margin-bottom: 35px;
-  padding-right: 14px;
+  padding-right: 20px;
   font-size: 24px;
   line-height: 26px;
   background-color: $basic-white;
@@ -46,14 +46,10 @@
   @media (min-width: $tablet-width) {
     width: auto;
     margin-bottom: 76px;
-    padding-right: 42px;
+    padding-right: 40px;
     padding-left: 40px;
     font-size: 36px;
     line-height: 36px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 40px;
   }
 }
 
@@ -65,7 +61,8 @@
 
 .form-contacts__container {
   @media (min-width: $tablet-width) {
-    padding: 0 40px;
+    padding-right: 38px;
+    padding-left: 41px;
   }
 
   @media (min-width: $desktop-width) {
@@ -87,7 +84,7 @@
   align-items: center;
   width: 100%;
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
@@ -95,15 +92,38 @@
 }
 
 .form-contacts__label {
-  margin-right: 13px;
   text-transform: uppercase;
   color: $special-dark-grey;
+
+  &--email {
+    margin-right: 13px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 24px;
+    }
+  }
+
+  &--phone {
+    margin-right: 11px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 14px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 16px;
+    }
+  }
 }
 
 .form-contacts__input {
   position: relative;
   flex-grow: 1;
-  padding: 13px 15px 14px;
+  padding: 15px 13px 10px;
   font-family: $accent-font;
   font-size: 16px;
   line-height: 18px;
@@ -114,9 +134,13 @@
   transition: all 0.3 ease;
 
   @media (min-width: $tablet-width) {
-    padding: 11px 21px;
+    padding: 11px 20px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 11px 17px;
   }
 
   &::placeholder {
@@ -143,9 +167,13 @@
 .form-contacts__input-icon {
   position: absolute;
   top: 50%;
-  right: 20px;
+  right: 14px;
   transform: translateY(-50%);
   transition: all 0.3 ease;
+
+  @media (min-width: $desktop-width) {
+    right: 17px;
+  }
 }
 
 .form-contacts__input:hover {

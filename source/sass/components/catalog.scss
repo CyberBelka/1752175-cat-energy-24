@@ -4,19 +4,19 @@
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 68px;
-    padding-top: 40px;
+    margin-bottom: 44px;
+    padding-top: 33px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 76px;
-    padding-top: 24px;
+    margin-bottom: 50px;
+    padding-top: 19px;
   }
 }
 
 .catalog__title {
   margin: 0;
-  margin-bottom: 41px;
+  margin-bottom: 40px;
   padding-left: 20px;
   font-family: $accent-font;
   font-weight: 400;
@@ -24,14 +24,14 @@
   line-height: 36px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 82px;
+    margin-bottom: 104px;
     padding-left: 0;
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 84px;
+    margin-bottom: 92px;
   }
 }
 
@@ -41,12 +41,14 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    gap: 60px;
+    column-gap: 60px;
+    row-gap: 82px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 245px);
-    gap: 80px;
+    column-gap: 80px;
+    row-gap: 71px;
   }
 }
 

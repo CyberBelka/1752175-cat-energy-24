@@ -12,6 +12,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
     padding: 0 70px;
     font-size: 20px;
     line-height: 30px;
@@ -40,8 +41,10 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    margin-bottom: 71px;
-    padding: 0 40px;
+    margin-bottom: 75px;
+    padding: 0;
+    padding-right: 38px;
+    padding-left: 41px;
   }
 
   @media (min-width: $desktop-width) {

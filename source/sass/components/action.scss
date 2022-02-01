@@ -15,10 +15,20 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/action@2x.jpg");
+    background-size: 279px auto;
+  }
+
   @media (min-width: $tablet-width) {
     min-height: 200px;
     margin-bottom: 76px;
     background-image: url("../img/bg-action-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-action-tablet@2x.jpg");
+      background-size: 707px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -26,6 +36,11 @@
     max-height: 289px;
     margin: 0;
     background-image: url("../img/bg-action-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-action-desktop@2x.jpg");
+      background-size: 245px auto;
+    }
   }
 
   &::before {
@@ -41,9 +56,8 @@
     background-size: auto;
 
     @media (min-width: $tablet-width) {
-      top: 50%;
-      transform: translateY(-50%);
-      left: 77px;
+      top: 56px;
+      left: 117px;
       background-size: 80px 83px;
     }
 
@@ -57,16 +71,16 @@
 
 .action__desc {
   margin: 0;
-  padding-top: 187px;
+  padding-top: 188px;
 
   @media (min-width: $tablet-width) {
     padding-top: 71px;
-    padding-left: 422px;
+    padding-left: 298px;
     text-align: start;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 185px;
+    padding-top: 187px;
     padding-left: 0;
     text-align: center;
   }

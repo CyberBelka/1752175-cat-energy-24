@@ -24,7 +24,7 @@
     @media (min-width: $tablet-width) {
       width: 244px;
       margin: 0;
-      padding: 14px 26px;
+      padding: 16px 26px;
       font-size: 20px;
       line-height: 20px;
     }
@@ -50,6 +50,18 @@
       background-color: $special-grey-2;
       color: $special-dark-grey;
       opacity: 0.3;
+    }
+  }
+
+  &--form {
+    width: 100%;
+    margin-bottom: 21px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      padding: 16px 0;
+      font-size: 20px;
+      line-height: 20px;
     }
   }
 }
