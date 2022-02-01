@@ -1,18 +1,18 @@
 .form-comment {
   position: relative;
   margin: 0 auto;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
   padding: 0;
   border: none;
   overflow-x: hidden;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 59px;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 67px;
+    margin-bottom: 62px;
     padding: 0;
   }
 }
@@ -32,17 +32,18 @@
 .form-comment__title {
   display: inline-block;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 39px;
   padding: 0;
-  padding-right: 22px;
+  padding-right: 23px;
   font-family: $accent-font;
   font-size: 24px;
   line-height: 26px;
   background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 76px;
+    margin-bottom: 77px;
     padding-left: 40px;
+    padding-right: 40px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -50,7 +51,8 @@
 
 .form-comment__container {
   @media (min-width: $tablet-width) {
-    padding: 0 40px;
+    padding-right: 38px;
+    padding-left: 41px;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,7 +63,7 @@
 .form-comment__textarea {
   width: 100%;
   box-sizing: border-box;
-  min-height: 150px;
+  min-height: 148px;
   margin: 0;
   padding: 9px 12px 9px 15px;
   font-family: $accent-font;
@@ -74,7 +76,8 @@
   border: none;
 
   @media (min-width: $tablet-width) {
-    padding: 10px 19px;
+    min-height: 172px;
+    padding: 10px 18px;
     font-size: 20px;
     line-height: 30px;
   }
