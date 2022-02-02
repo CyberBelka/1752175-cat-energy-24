@@ -8,7 +8,7 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -113,14 +113,14 @@
             <ol class="slider__list">
               <li class="slider__item slider__item--fat slider__item--before">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/before-tablet.png, img/before-tablet@2x.png">
-                  <img class="slider__image slider__image--fat" src="img/before-mobile.png" srcset="img/before-mobile@2x.png" width="580" height="232" alt="Толстый кот.">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet.png 1x, img/before-tablet@2x.png 2x">
+                  <img class="slider__image slider__image--fat" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" width="580" height="232" alt="Толстый кот.">
                 </picture>
               </li>
               <li class="slider__item slider__item--after">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/after-tablet.png, img/after-tablet@2x.png">
-                  <img class="slider__image slider__image--slim" src="img/after-mobile.png" srcset="img/after-mobile@2x.png" width="580" height="232" alt="Стройный кот.">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet.png 1x, img/after-tablet@2x.png 2x">
+                  <img class="slider__image slider__image--slim" src="img/after-mobile.png" srcset="img/after-mobile@2x.png 2x" width="580" height="232" alt="Стройный кот.">
                 </picture>
               </li>
             </ol>
@@ -160,8 +160,8 @@
               <li class="social__item">
                 <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">Вконтакте</span>
-                  <svg width="23" height="16">
-                    <use xlink:href="img/icons.svg#icon-vk"></use>
+                  <svg class="social__icon" width="23" height="16">
+                    <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
                   </svg>
                 </a>
               </li>
@@ -169,7 +169,7 @@
                 <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
                   <span class="visually-hidden">Инстаграм</span>
                   <svg width="16" height="16">
-                    <use xlink:href="img/icons.svg#icon-inst"></use>
+                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
@@ -177,7 +177,7 @@
                 <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
                   <span class="visually-hidden">Фейсбук</span>
                   <svg width="22" height="22">
-                    <use xlink:href="img/icons.svg#icon-fb"></use>
+                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
@@ -187,7 +187,7 @@
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <p class="copyright__text">HTML Academy</p>
               <svg width="27" height="34">
-                <use xlink:href="img/icons.svg#icon-academy"></use>
+                <use xlink:href="img/sprite.svg#logo-academy"></use>
               </svg>
             </a>
           </div>

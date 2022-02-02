@@ -8,12 +8,12 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body">
   <header class="page-header page-header--inner-page">
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <a class="main-nav__logo">
+        <a class="main-nav__logo" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -63,7 +63,7 @@
                   <ul class="form-programs__list">
                     <li class="form-programs__item">
                       <input class="visually-hidden form-programs__input" type="radio" name="program" value="slim" id="slim" checked>
-                      <label class="form-programs__control controform-programs__inputl-radio" for="slim">Похудение</label>
+                      <label class="form-programs__control control-radio" for="slim">Похудение</label>
                     </li>
                     <li class="form-programs__item">
                       <input class="visually-hidden form-programs__input" type="radio" name="program" value="fat" id="fat">
@@ -88,14 +88,14 @@
                       <label class="form-contacts__label form-contacts__label--email" for="email">E-mail:*</label>
                       <input class="form-contacts__input form-contacts__input--error form-contacts__input--email" id="email" type="email" name="email" placeholder="kuklachev@gmail.com">
                       <svg class="form-contacts__input-icon" width="20" height="15">
-                        <use xlink:href="img/icons.svg#icon-email"></use>
+                        <use xlink:href="img/sprite.svg#icon-email"></use>
                       </svg>
                     </p>
                     <p class="form-contacts__item">
                       <label class="form-contacts__label form-contacts__label--phone" for="phone">Телефон:*</label>
                       <input class="form-contacts__input form-contacts__input--error" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
                       <svg class="form-contacts__input-icon" width="20" height="21">
-                        <use xlink:href="img/icons.svg#icon-phone"></use>
+                        <use xlink:href="img/sprite.svg#icon-phone"></use>
                       </svg>
                     </p>
                   </div>
@@ -170,7 +170,7 @@
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Вконтакте</span>
               <svg width="23" height="16">
-                <use xlink:href="img/icons.svg#icon-vk"></use>
+                <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
               </svg>
             </a>
           </li>
@@ -178,7 +178,7 @@
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
               <span class="visually-hidden">Инстаграм</span>
               <svg width="16" height="16">
-                <use xlink:href="img/icons.svg#icon-inst"></use>
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
@@ -186,7 +186,7 @@
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Фейсбук</span>
               <svg width="22" height="22">
-                <use xlink:href="img/icons.svg#icon-fb"></use>
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
@@ -196,7 +196,7 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="copyright__text">HTML Academy</p>
           <svg width="27" height="34">
-            <use xlink:href="img/icons.svg#icon-academy"></use>
+            <use xlink:href="img/sprite.svg#logo-academy"></use>
           </svg>
         </a>
       </div>
