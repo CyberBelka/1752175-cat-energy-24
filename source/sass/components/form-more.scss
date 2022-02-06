@@ -82,6 +82,7 @@
 }
 
 .form-more__control {
+  display: block;
   padding-left: 46px;
 
   @media (min-width: $tablet-width) {
@@ -138,4 +139,9 @@
 
 .form-more__input:disabled + label {
   opacity: 0.3;
+}
+
+.form-more__input:focus + label::before {
+  outline: 2px solid $special-dark-grey;
+  border: none;
 }

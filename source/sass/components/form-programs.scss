@@ -43,6 +43,7 @@
 }
 
 .form-programs__control {
+  display: block;
   padding-left: 45px;
 
   @media (min-width: $tablet-width) {
@@ -70,6 +71,11 @@
 
 .form-programs__input:hover + label::before {
   border-color: $button-hover;
+}
+
+.form-programs__input:focus + label::before {
+  outline: 2px solid $special-dark-grey;
+  border: none;
 }
 
 .form-programs__input:checked + label::after {
